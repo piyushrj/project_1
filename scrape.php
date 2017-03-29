@@ -10,7 +10,7 @@
         echo("Could not fetch the url provided");
         exit();
     }
-    if(preg_match_all('@<h2\s*class="tuple-clg-heading"><a\s*href="[^"]+"\s*target="_blank">(.+)<\/a>@',$ret,$matches))
+    if(preg_match_all('@<h2\s*class="tuple-clg-heading"><a\s*href="[^"]+"\s*target="_blank">(.+)+<\/a>\s*<p>\|\s*(.+)<\/p><\/h2>\s*<ul class="facility-icons">\s*(?:<li class="emptyDesc">\s*<i class="[^"]+">\s*<div class="srpHoverCntnt2">\s*<h3>(.+)<\/h3>\s*<p><\/p>\s*<\/div>\s*<\/i>\s*<\/li>\s*)+<\/ul>@',$ret,$matches))
     {
         var_dump($matches);
     }
