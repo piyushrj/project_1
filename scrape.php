@@ -86,6 +86,8 @@
              
     }
     require("result.php");
+    mysql_query("TRUNCATE table college");
+    mysql_query("TRUNCATE table facilities");
     require("disconnect.php");
     
     
