@@ -74,13 +74,19 @@
             
         }
         else
-        echo("failed to parse the college data");
+        echo("failed to parse the college data"."\t".$link);
         
-        preg_match('@<div class="added-clgs"><div class="num-to-add">(.+)<\/div><\/div>\s<\/div>@',$ret,$pages);
-        return($pages[1]);
-        
+        if(preg_match('@<li class="actvpage"><a>(.+)<\/a><\/li>\s<\/ul>@',$ret,$pages1))
+        return($pages1[1]);
+        else 
+        {
+            preg_match('@<li class=" linkpagination"><a data-page="[0-9]+" href =[^>]+>(.+)<\/a><\/li>\s<li class="next linkpagination">@',$ret,$pages2);
+            return($pages2[1]);
+        }
+             
     }
-    
+    require("result.php");
+    require("disconnect.php");
     
     
 ?>
