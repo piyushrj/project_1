@@ -1,0 +1,42 @@
+#colleges {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    overflow-x:auto;
+    padding: 20px;
+}
+
+#colleges td, #colleges th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    color:white;
+    font-family: 'Actor', sans-serif;
+}
+
+
+
+#colleges tr:hover {background-color: #006400;}
+
+#colleges th {
+    
+    text-align: center;
+    background-color: #FF0000;
+    color: white;
+    font-size:170%;
+}
+h1 {
+    text-align: center;
+    font-family: 'Homenaje', sans-serif;
+    color:white;
+    font-size: 500%;
+}
+
+
+
+
+
+body{
+    background-image: url("http://www.kibworthvillage.co.uk/index_htm_files/542.png");
+     
+    
+    
+}

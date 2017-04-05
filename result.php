@@ -1,11 +1,11 @@
 <?php
     $q="SELECT name,location FROM college WHERE 1";
     $rows=mysql_query($q);
-    echo("<table>");
+    echo("<table  id=\"colleges\">");
     echo("<tr>");
-    echo("<td><h2>Name</h2></td>");
-    echo("<td><h2>Location</h2></td>");
-    echo("<td><h2>Facilities</h2></td>");
+    echo("<th><b>Name</b></th>");
+    echo("<th><b>Location</b></th>");
+    echo("<th><b>Facilities</b></th>");
     echo("</tr>");
     while($row=mysql_fetch_array($rows))
     {
@@ -15,7 +15,7 @@
         echo("<td>");
         $fclts=mysql_query("SELECT facility FROM facilities WHERE cname='".mysql_real_escape_string($row["name"])."'");
         while($f=mysql_fetch_array($fclts))
-        echo($f["facility"].",");
+        echo($f["facility"]."\t\t");
         
         echo("</td>");
         echo("</tr>");

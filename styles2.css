@@ -1,0 +1,47 @@
+#colleges {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    overflow-x:auto;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 500%;
+}
+form{
+    text-align:center;
+    font-size: 16px !important;
+}
+.button
+{
+padding: 7px 14px 8px !important;
+font-size: 16px !important;
+background-color: #000000;
+font-weight: bold;
+text-shadow: 1px 1px #000000;
+color: #ffffff;
+border-radius: 100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border: 1px solid #000000;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+
+
+
+body{
+    background-image: url("http://www.iitr.ac.in/cvip2017/images/home_2.jpg");
+    background-color: #cccccc;
+    background-size:cover;                      
+    background-repeat:no-repeat;
+    background-attachment: scroll;  
+    background-position: 0% 0%;
+    
+}
